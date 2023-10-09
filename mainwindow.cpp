@@ -7,7 +7,6 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-    int a = {0};
 }
 
 MainWindow::~MainWindow()
@@ -36,12 +35,9 @@ void MainWindow::on_pushButton_2_clicked()
 
 // вывод текста в терминал
 void MainWindow::on_pushButton_3_clicked() {
-    if (int a = 0) {
-        ui->pushButton_3->setText("ТУТ БЫЛИ ТЕРРОРИСТЫ");
-    }
-    else {
-        ui->pushButton_3->setText("ТУТ БЫЛИ ЭКСТРЕМИСТЫ");
-    }
+    ui->pushButton_3->setText("ТУТ БЫЛИ ТЕРРОРИСТЫ");
+    
+    ui->pushButton_3->setText("ТУТ БЫЛИ ЭКСТРЕМИСТЫ");
 }
 
 //
@@ -51,12 +47,10 @@ void MainWindow::on_pushButton_2_toggled(bool checked)
     {
         std::cout << "1" << std::endl;
         ui->pushButton_2->setText("дыа");
-        int a = {0};
     }
     else
     {
         std::cout << "2" << std::endl;
         ui->pushButton_2->setText("Нет, ХУЙ НА БЛЮДЕ!");
-        int a = {1};
     }
 }
