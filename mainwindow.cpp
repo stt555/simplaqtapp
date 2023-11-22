@@ -27,7 +27,7 @@ void MainWindow::on_pushButton_released()
     ui->pushButton->setText("1");
 }
 
-// ничего.тут хуй что изменишь без поломки текств
+// ничего. тут хуй что изменишь без поломки текств
 void MainWindow::on_pushButton_2_clicked()
 {
 
